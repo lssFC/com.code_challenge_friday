@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
                     </span>
                     <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="testcases.test_cases_run" hash-for-method="test_address_all_cases">test_address_all_cases</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="testcases.test_cases_run" hash-for-method="test_address_complex_cases">test_address_complex_cases</a> <!-- method navigator-link -->
@@ -138,6 +143,13 @@
               <span class="class-name">testcases.test_cases_run</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_address_all_cases">
+                  </a> <!-- test_address_all_cases -->
+                  <span class="method-name">test_address_all_cases</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="test_address_complex_cases">
@@ -182,6 +194,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;testcases.test_cases_run&quot;&gt;
         &lt;methods&gt;
+          &lt;include name=&quot;test_address_all_cases&quot;/&gt;
           &lt;include name=&quot;test_address_simple_cases&quot;/&gt;
           &lt;include name=&quot;test_address_complex_cases&quot;/&gt;
           &lt;include name=&quot;test_address_complicated_cases&quot;/&gt;
@@ -227,28 +240,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_address_extra_cases')
 data.setCell(0, 2, 'testcases.test_cases_run')
-data.setCell(0, 3, 69);
+data.setCell(0, 3, 80);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test_address_simple_cases')
+data.setCell(1, 1, 'test_address_all_cases')
 data.setCell(1, 2, 'testcases.test_cases_run')
-data.setCell(1, 3, 47);
+data.setCell(1, 3, 68);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test_address_complicated_cases')
+data.setCell(2, 1, 'test_address_complex_cases')
 data.setCell(2, 2, 'testcases.test_cases_run')
-data.setCell(2, 3, 16);
+data.setCell(2, 3, 20);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test_address_complex_cases')
+data.setCell(3, 1, 'test_address_complicated_cases')
 data.setCell(3, 2, 'testcases.test_cases_run')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 12);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_address_simple_cases')
+data.setCell(4, 2, 'testcases.test_cases_run')
+data.setCell(4, 3, 8);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 132 ms</span>
+              <span class="suite-total-time">Total running time: 188 ms</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -280,40 +297,48 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <span class="method-name">test_address_all_cases</span>
+                <span class="method-start">408 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=test_address_all_cases status=SUCCESS method=test_cases_run.test_address_all_cases(...)</span>
+                <span class="method-start">488 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
                 <span class="method-name">test_address_simple_cases</span>
-                <span class="method-start">525 ms</span>
+                <span class="method-start">508 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=test_address_simple_cases status=SUCCESS method=test_cases_run.test_address_simple_...)</span>
-                <span class="method-start">572 ms</span>
+                <span class="method-start">520 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">test_address_complex_cases</span>
-                <span class="method-start">594 ms</span>
+                <span class="method-start">520 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=test_address_complex_cases status=SUCCESS method=test_cases_run.test_address_comple...)</span>
-                <span class="method-start">594 ms</span>
+                <span class="method-start">540 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">test_address_complicated_cases</span>
-                <span class="method-start">594 ms</span>
+                <span class="method-start">544 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=test_address_complicated_cases status=SUCCESS method=test_cases_run.test_address_co...)</span>
-                <span class="method-start">610 ms</span>
+                <span class="method-start">556 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">test_address_extra_cases</span>
-                <span class="method-start">626 ms</span>
+                <span class="method-start">560 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=test_address_extra_cases status=SUCCESS method=test_cases_run.test_address_extra_ca...)</span>
-                <span class="method-start">741 ms</span>
+                <span class="method-start">644 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">757 ms</span>
+                <span class="method-start">684 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

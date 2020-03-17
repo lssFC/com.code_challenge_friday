@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="4.528" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="4.886" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire8337018546077963527\surefirebooter2987612481663093851.jar C:\Users\User\AppData\Local\Temp\surefire8337018546077963527 2020-03-17T18-22-18_883-jvmRun1 surefire2527202249328979725tmp surefire_08012588134609906347tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire7714823183535633907\surefirebooter8979146226930402363.jar C:\Users\User\AppData\Local\Temp\surefire7714823183535633907 2020-03-17T18-50-00_235-jvmRun1 surefire6073587427033451tmp surefire_01595449257182928820tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\User\IdeaProjects\com.code_challenge_friday\target\test-classes;C:\Users\User\IdeaProjects\com.code_challenge_friday\target\classes;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\javax\inject\javax.inject\1\javax.inject-1.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\com\google\guava\guava\19.0\guava-19.0.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\com\googlecode\json-simple\json-simple\1.1\json-simple-1.1.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\maven\apache-maven-3.5.0\MAVEN_LIBS\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\User"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire8337018546077963527\surefirebooter2987612481663093851.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire7714823183535633907\surefirebooter8979146226930402363.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_241\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,8 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="test_address_simple_cases" classname="testcases.test_cases_run" time="0.047"/>
-  <testcase name="test_address_complex_cases" classname="testcases.test_cases_run" time="0"/>
-  <testcase name="test_address_complicated_cases" classname="testcases.test_cases_run" time="0.016"/>
-  <testcase name="test_address_extra_cases" classname="testcases.test_cases_run" time="0.115"/>
+  <testcase name="test_address_all_cases" classname="testcases.test_cases_run" time="0.08"/>
+  <testcase name="test_address_simple_cases" classname="testcases.test_cases_run" time="0.012"/>
+  <testcase name="test_address_complex_cases" classname="testcases.test_cases_run" time="0.02"/>
+  <testcase name="test_address_complicated_cases" classname="testcases.test_cases_run" time="0.008"/>
+  <testcase name="test_address_extra_cases" classname="testcases.test_cases_run" time="0.106"/>
 </testsuite>

@@ -2,11 +2,16 @@ This coding challenge is created in JAVA Maven project
 I have also added the extent reporting in it.
 
 cases 1,2,3 are the given cases and also created one more additional case for other name combination
+Note:
+I have mapped the output of all 3 case results jsonObject. so there is no separate jsonObject for each result.
+However: test_address_all_cases contains the single jsonObject result
+
 I have created two tests can be found in following location
-test 1: test_address_simple_cases
-test 2: test_address_complex_cases
-test 3: test_address_complicated_cases
-test 4: test_address_extra_cases
+test 1: test_address_all_cases
+test 2: test_address_simple_cases
+test 3: test_address_complex_cases
+test 4: test_address_complicated_cases
+test 5: test_address_extra_cases
 
 Steps:
 1. Import current project from Git to eclipse

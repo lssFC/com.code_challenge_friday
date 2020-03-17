@@ -30,7 +30,6 @@ public class test_cases_run {
     static ExtentTest test;
     static String rootPath = Paths.get("").toAbsolutePath().toString() ;
 
-
     @BeforeTest
     public static void startTest()
     {
@@ -67,10 +66,40 @@ public class test_cases_run {
         extent.flush();
     }
     @Test
+    public void test_address_all_cases() {
+        test = extent.createTest("test_address_extra_cases", "extra_cases");
+        String testdata = "testdata.txt";
+        ArrayList<String> AddressDetails = (ArrayList<String>) utils.getTestData(testdata);
+        if(AddressDetails.size() == 0){
+            Assert.assertTrue(false , "Test data not available");
+        }
+        ArrayList<String> StreetList = new ArrayList<String>();
+        ArrayList<String> HouseList = new ArrayList<String>();
+        Map<String, Object> data = new HashMap<String, Object>();
+
+        String[] array_Address = null;
+        for (int num = 0; num < AddressDetails.size(); num++) {
+            String Address_data = AddressDetails.get(num);
+            test.log(Status.INFO, "checking address: "+Address_data);
+            String address_str = Address_data.replaceAll("[,]", "");
+            array_Address = address_str.split(" ");
+            List<String> address_data_list =utils.getAddressDetails(array_Address);
+            JSONObject json = new JSONObject();
+            json.put("street", address_data_list.get(0));
+            json.put("housenumber",address_data_list.get(1));
+            test.log(Status.INFO, "converted address: "+json);
+            System.out.println(json);
+
+        }
+    }
+    @Test
     public void test_address_simple_cases() {
         test = extent.createTest("test_address_simple_cases", "simple_cases");
         String testdata = "testdata_simple_cases.txt";
         ArrayList<String> AddressDetails = (ArrayList<String>) utils.getTestData(testdata);
+        if(AddressDetails.size() == 0){
+            Assert.assertTrue(false , "Test data not available");
+        }
         ArrayList<String> StreetList = new ArrayList<String>();
         ArrayList<String> HouseList = new ArrayList<String>();
         Map<String, Object> data = new HashMap<String, Object>();
@@ -100,6 +129,9 @@ public class test_cases_run {
 
         String testdata = "testdata_complex_cases.txt";
         ArrayList<String> AddressDetails = (ArrayList<String>) utils.getTestData(testdata);
+        if(AddressDetails.size() == 0){
+            Assert.assertTrue(false , "Test data not available");
+        }
         ArrayList<String> StreetList = new ArrayList<String>();
         ArrayList<String> HouseList = new ArrayList<String>();
         Map<String, Object> data = new HashMap<String, Object>();
@@ -129,6 +161,9 @@ public class test_cases_run {
         test = extent.createTest("test_address_complicated_cases", "complicated_cases");
         String testdata = "testdata_complicated_cases.txt";
         ArrayList<String> AddressDetails = (ArrayList<String>) utils.getTestData(testdata);
+        if(AddressDetails.size() == 0){
+            Assert.assertTrue(false , "Test data not available");
+        }
         ArrayList<String> StreetList = new ArrayList<String>();
         ArrayList<String> HouseList = new ArrayList<String>();
         Map<String, Object> data = new HashMap<String, Object>();
@@ -152,11 +187,15 @@ public class test_cases_run {
         test.log(Status.INFO, "output: "+data);
     }
 
+
     @Test
     public void test_address_extra_cases() {
         test = extent.createTest("test_address_extra_cases", "extra_cases");
         String testdata = "testdata_extra_cases.txt";
         ArrayList<String> AddressDetails = (ArrayList<String>) utils.getTestData(testdata);
+        if(AddressDetails.size() == 0){
+            Assert.assertTrue(false , "Test data not available");
+        }
         ArrayList<String> StreetList = new ArrayList<String>();
         ArrayList<String> HouseList = new ArrayList<String>();
         Map<String, Object> data = new HashMap<String, Object>();

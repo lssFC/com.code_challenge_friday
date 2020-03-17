@@ -5,6 +5,7 @@
         <classes>
             <class name="testcases.test_cases_run">
                 <methods>
+                    <include name="test_address_all_cases" />
                     <include name="test_address_simple_cases" />
                     <include name="test_address_complex_cases" />
                     <include name="test_address_complicated_cases" />

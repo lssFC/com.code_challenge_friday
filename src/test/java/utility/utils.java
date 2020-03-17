@@ -25,10 +25,7 @@ public class utils {
 
 
         }
-
         List<String> addressDataList = new ArrayList<String>();
-
-
         return addressDataList;
     }
 
@@ -73,14 +70,11 @@ public class utils {
             for ( String data : address){
                 counter++;
                 boolean isContainsDigit = utils.containsDigit(data);
-
-
                 if(isContainsDigit){
                     index = Arrays.asList(address).indexOf(data);
                     if(totalLengh > counter){
                         value_One_minus_index = address[index+1];
                         if(checkLength(value_One_minus_index)){
-
                             removeMinusIndex = true;
                         }
                     }else if(totalLengh == counter){
@@ -89,9 +83,7 @@ public class utils {
                             removePlusIndex = true;
                         }
                     }
-
                     houseNumList.add(data);
-
                 }else{
                     streetList.add(data);
                 }
@@ -121,7 +113,6 @@ public class utils {
             if(str.trim().equalsIgnoreCase("No") ){
                 addressArray = addressData.split("No");
                 splitString = true;
-
                 break;
             }else if (str.trim().equalsIgnoreCase("No.")){
                 addressArray = addressData.split("No.");
