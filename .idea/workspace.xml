@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf0a47f2-9a2f-4a7d-9759-1802467b892b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZAH5Unv8VBEb1Ux0oeM2NYKpkb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="testcases" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\com.code_challenge_friday" />
+      <recent name="C:\Users\User\IdeaProjects\com.code_challenge_friday\resource" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.test_cases2">
+    <configuration name="C:/Users/User/IdeaProjects/com.code_challenge_friday/testng2.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.code_challenge_friday" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng2.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/User/IdeaProjects/com.code_challenge_friday/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.code_challenge_friday" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.testng.reporters.FailedReporter" />
+        <listener class="org.testng.reporters.EmailableReporter2" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_cases2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.code_challenge_friday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.test_cases2" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_casesOne.test_address_simple_cases" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.code_challenge_friday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testSimpleCase" />
+      <option name="MAIN_CLASS_NAME" value="testcases.test_casesOne" />
+      <option name="METHOD_NAME" value="test_address_simple_cases" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_cases.test_address_extra_cases" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.code_challenge_friday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.test_cases" />
+      <option name="METHOD_NAME" value="test_address_extra_cases" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/User/IdeaProjects/com.code_challenge_friday/testng.xml" />
+      <item itemvalue="TestNG.test_cases.test_address_extra_cases" />
+      <item itemvalue="TestNG.test_casesOne.test_address_simple_cases" />
+      <item itemvalue="TestNG.C:/Users/User/IdeaProjects/com.code_challenge_friday/testng2.xml" />
+      <item itemvalue="TestNG.test_cases2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.test_cases2" />
+        <item itemvalue="TestNG.C:/Users/User/IdeaProjects/com.code_challenge_friday/testng2.xml" />
+        <item itemvalue="TestNG.C:/Users/User/IdeaProjects/com.code_challenge_friday/testng.xml" />
+        <item itemvalue="TestNG.test_cases.test_address_extra_cases" />
+        <item itemvalue="TestNG.test_casesOne.test_address_simple_cases" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf0a47f2-9a2f-4a7d-9759-1802467b892b" name="Default Changelist" comment="" />
+      <created>1584274794902</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584274794902</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584301750724">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1584301750724" />
+    <state x="447" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584466275248">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="447" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1584466275248" />
+    <state x="412" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584301745429">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1584301745429" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1584309944218">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584309944218" />
+    <state width="1323" height="140" key="GridCell.Tab.0.bottom" timestamp="1584465133922">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584465133922" />
+    <state width="1323" height="140" key="GridCell.Tab.0.center" timestamp="1584465133922">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="140" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584465133922" />
+    <state width="1323" height="140" key="GridCell.Tab.0.left" timestamp="1584465133922">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="140" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584465133922" />
+    <state width="1323" height="140" key="GridCell.Tab.0.right" timestamp="1584465133922">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="140" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584465133922" />
+    <state width="1323" height="259" key="GridCell.Tab.1.bottom" timestamp="1584301507742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="259" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584301507742" />
+    <state width="1323" height="259" key="GridCell.Tab.1.center" timestamp="1584301507742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="259" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584301507742" />
+    <state width="1323" height="259" key="GridCell.Tab.1.left" timestamp="1584301507742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="259" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584301507742" />
+    <state width="1323" height="259" key="GridCell.Tab.1.right" timestamp="1584301507742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="259" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584301507742" />
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1584297546321">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1584297546321" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1584301486547">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584301486546" />
+    <state x="378" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584462478324">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584462478324" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/utility/utils.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

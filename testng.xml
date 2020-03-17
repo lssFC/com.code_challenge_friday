@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/User/IdeaProjects/com.code_challenge_friday">
+        <classes>
+            <class name="testcases.test_cases_run">
+                <methods>
+                    <include name="test_address_simple_cases" />
+                    <include name="test_address_complex_cases" />
+                    <include name="test_address_complicated_cases" />
+                    <include name="test_address_extra_cases" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

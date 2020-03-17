@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="2040" started-at="2020-03-17T18:22:23 CET" finished-at="2020-03-17T18:22:25 CET">
+    <groups>
+    </groups>
+    <test name="C:/Users/User/IdeaProjects/com.code_challenge_friday" duration-ms="2040" started-at="2020-03-17T18:22:23 CET" finished-at="2020-03-17T18:22:25 CET">
+      <class name="testcases.test_cases_run">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testcases.test_cases_run@13deb50e]" name="startTest" is-config="true" duration-ms="456" started-at="2020-03-17T18:22:23 CET" finished-at="2020-03-17T18:22:23 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="test_address_simple_cases()[pri:0, instance:testcases.test_cases_run@13deb50e]" name="test_address_simple_cases" duration-ms="47" started-at="2020-03-17T18:22:23 CET" finished-at="2020-03-17T18:22:23 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_address_simple_cases -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.test_cases_run@13deb50e]" name="getResult" is-config="true" duration-ms="16" started-at="2020-03-17T18:22:23 CET" finished-at="2020-03-17T18:22:23 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_address_simple_cases status=SUCCESS method=test_cases_run.test_address_simple_cases()[pri:0, instance:testcases.test_cases_run@13deb50e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="test_address_complex_cases()[pri:0, instance:testcases.test_cases_run@13deb50e]" name="test_address_complex_cases" duration-ms="0" started-at="2020-03-17T18:22:23 CET" finished-at="2020-03-17T18:22:23 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_address_complex_cases -->
+        <test-method status="PASS" signature="test_address_complicated_cases()[pri:0, instance:testcases.test_cases_run@13deb50e]" name="test_address_complicated_cases" duration-ms="16" started-at="2020-03-17T18:22:23 CET" finished-at="2020-03-17T18:22:23 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_address_complicated_cases -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.test_cases_run@13deb50e]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-17T18:22:23 CET" finished-at="2020-03-17T18:22:23 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_address_complex_cases status=SUCCESS method=test_cases_run.test_address_complex_cases()[pri:0, instance:testcases.test_cases_run@13deb50e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.test_cases_run@13deb50e]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-17T18:22:23 CET" finished-at="2020-03-17T18:22:23 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_address_complicated_cases status=SUCCESS method=test_cases_run.test_address_complicated_cases()[pri:0, instance:testcases.test_cases_run@13deb50e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="test_address_extra_cases()[pri:0, instance:testcases.test_cases_run@13deb50e]" name="test_address_extra_cases" duration-ms="69" started-at="2020-03-17T18:22:23 CET" finished-at="2020-03-17T18:22:24 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_address_extra_cases -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:testcases.test_cases_run@13deb50e]" name="getResult" is-config="true" duration-ms="0" started-at="2020-03-17T18:22:24 CET" finished-at="2020-03-17T18:22:24 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_address_extra_cases status=SUCCESS method=test_cases_run.test_address_extra_cases()[pri:0, instance:testcases.test_cases_run@13deb50e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.test_cases_run@13deb50e]" name="tearDown" is-config="true" duration-ms="1259" started-at="2020-03-17T18:22:24 CET" finished-at="2020-03-17T18:22:25 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.test_cases_run -->
+    </test> <!-- C:/Users/User/IdeaProjects/com.code_challenge_friday -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

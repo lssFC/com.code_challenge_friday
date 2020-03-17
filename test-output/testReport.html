@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='EEEE, MMMM dd, yyyy, hh:mm a '('zzz')''/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Test Report</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Test Report for code challenge</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='5.882%'><span class='strong'>4</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='94.118%'>64</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>test_address_simple_cases</span>
+						<span class='test-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+	<span class='label end-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+47ms</span>
+</div>
+	<div class='test-desc'>simple_cases </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Winterallee 3</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"3","street":"Winterallee"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Musterstrasse 45</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"45","street":"Musterstrasse"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Blaufeldweg 123B</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"123B","street":"Blaufeldweg"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>output: {Winterallee 3={"housenumber":"3","street":"Winterallee"}, Blaufeldweg 123B={"housenumber":"123B","street":"Blaufeldweg"}, Musterstrasse 45={"housenumber":"45","street":"Musterstrasse"}}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'><span class='label white-text green'>test_address_simple_cases PASSED </span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>test_address_complex_cases</span>
+						<span class='test-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+	<span class='label end-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-desc'>complex_cases </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: 4, rue de la revolution</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"4","street":"rue de la revolution"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: 200 Broadway Av</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"200","street":"Broadway Av"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Calle Aduana, 29</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"29","street":"Calle Aduana"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Calle 39 No 1540</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"No  1540","street":"Calle 39 "}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>output: {4 rue de la revolution={"housenumber":"4","street":"rue de la revolution"}, 200 Broadway Av={"housenumber":"200","street":"Broadway Av"}, Calle Aduana 29={"housenumber":"29","street":"Calle Aduana"}, Calle 39 No 1540={"housenumber":"No  1540","street":"Calle 39 "}}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'><span class='label white-text green'>test_address_complex_cases PASSED </span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>test_address_complicated_cases</span>
+						<span class='test-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+	<span class='label end-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+16ms</span>
+</div>
+	<div class='test-desc'>complicated_cases </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Am Bächle 23</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"23","street":"Am Bächle"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Auf der Vogelwiese 23 b</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"23 b","street":"Auf der Vogelwiese"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>output: {Auf der Vogelwiese 23 b={"housenumber":"23 b","street":"Auf der Vogelwiese"}, Am Bächle 23={"housenumber":"23","street":"Am Bächle"}}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'><span class='label white-text green'>test_address_complicated_cases PASSED </span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>test_address_extra_cases</span>
+						<span class='test-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+	<span class='label end-time'>Tuesday, March 17, 2020, 06:22 PM (CET)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+115ms</span>
+</div>
+	<div class='test-desc'>extra_cases </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Winterallee - 3</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"- 3","street":"Winterallee"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Musterstrasse (88)45</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"(88)45","street":"Musterstrasse"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Blaufeldweg 123B</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"123B","street":"Blaufeldweg"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Auf der Vogelwiese 99(23) b</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"99(23) b","street":"Auf der Vogelwiese"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Auf der Vogelwiese 23/b</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"23\/b","street":"Auf der Vogelwiese"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Auf der Vogelwiese CC 23 b</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"23 b","street":"Auf der Vogelwiese CC"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Auf der Vogelwiese D 23 C</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"23 C","street":"Auf der Vogelwiese D"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Auf der Vogelwiese D 23-C</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"D 23-C","street":"Auf der Vogelwiese"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Auf der Vogelwiese D-23-C</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"D-23-C","street":"Auf der Vogelwiese"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Auf der Vogelwiese D-23C</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"D-23C","street":"Auf der Vogelwiese"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Auf der Vogelwiese 23_C</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"23_C","street":"Auf der Vogelwiese"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Auf der Vogelwiese 41.A</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"41.A","street":"Auf der Vogelwiese"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Auf der Vogelwiese A.32</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"A.32","street":"Auf der Vogelwiese"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Neuhof 13/15</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"13\/15","street":"Neuhof"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Piazza dell'Indipendenza 14</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"14","street":"Piazza dell'Indipendenza"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Ebay 10th Street, 55</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"10th 55","street":"Ebay Street"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Radio Road, No 110</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"No  110","street":"Radio Road "}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Österreicher Weg 12A/8/6</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"12A\/8\/6","street":"�\u2013sterreicher Weg"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:23 PM</td>
+					<td class='step-details'>checking address: Schegargasse 13-15/8/6</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:24 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"13-15\/8\/6","street":"Schegargasse"}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:24 PM</td>
+					<td class='step-details'>checking address: Poststr. 2 1/2</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:24 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"2 2 1\/2","street":"Poststr."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:24 PM</td>
+					<td class='step-details'>checking address: Pallaswiesenstr. A. 235</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:24 PM</td>
+					<td class='step-details'>converted address: {"housenumber":"235","street":"Pallaswiesenstr. A."}</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:22:24 PM</td>
+					<td class='step-details'>output: {Auf der Vogelwiese 99(23) b={"housenumber":"99(23) b","street":"Auf der Vogelwiese"}, Österreicher Weg 12A/8/6={"housenumber":"12A\/8\/6","street":"�\u2013sterreicher Weg"}, Blaufeldweg 123B={"housenumber":"123B","street":"Blaufeldweg"}, Auf der Vogelwiese A.32={"housenumber":"A.32","street":"Auf der Vogelwiese"}, Ebay 10th Street 55={"housenumber":"10th 55","street":"Ebay Street"}, Auf der Vogelwiese CC 23 b={"housenumber":"23 b","street":"Auf der Vogelwiese CC"}, Auf der Vogelwiese D 23-C={"housenumber":"D 23-C","street":"Auf der Vogelwiese"}, Radio Road No 110={"housenumber":"No  110","street":"Radio Road "}, Auf der Vogelwiese D-23-C={"housenumber":"D-23-C","street":"Auf der Vogelwiese"}, Pallaswiesenstr. A. 235={"housenumber":"235","street":"Pallaswiesenstr. A."}, Auf der Vogelwiese 23_C={"housenumber":"23_C","street":"Auf der Vogelwiese"}, Neuhof 13/15={"housenumber":"13\/15","street":"Neuhof"}, Auf der Vogelwiese D 23 C={"housenumber":"23 C","street":"Auf der Vogelwiese D"}, Auf der Vogelwiese D-23C={"housenumber":"D-23C","street":"Auf der Vogelwiese"}, Auf der Vogelwiese 23/b={"housenumber":"23\/b","street":"Auf der Vogelwiese"}, Schegargasse 13-15/8/6={"housenumber":"13-15\/8\/6","street":"Schegargasse"}, Piazza dell'Indipendenza 14={"housenumber":"14","street":"Piazza dell'Indipendenza"}, Winterallee - 3={"housenumber":"- 3","street":"Winterallee"}, Auf der Vogelwiese 41.A={"housenumber":"41.A","street":"Auf der Vogelwiese"}, Musterstrasse (88)45={"housenumber":"(88)45","street":"Musterstrasse"}, Poststr. 2 1/2={"housenumber":"2 2 1\/2","street":"Poststr."}}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>6:22:24 PM</td>
+					<td class='step-details'><span class='label white-text green'>test_address_extra_cases PASSED </span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>4</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>68</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Tuesday, March 17, 2020, 06:22 PM (CET)</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Tuesday, March 17, 2020, 06:22 PM (CET)</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 0m 0s+556ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 4,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				
+				passChild: 4,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 64,
+				exceptionsChild: 0,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>
